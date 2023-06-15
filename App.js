@@ -25,8 +25,7 @@ function TabNavigator() {
 function AppNavigator() {
   return (
     <Stack.Navigator>
-      <Stack.Screen name="LoginScreen" component={TabNavigator} />
-      {/* <Stack.Screen name="Home" component={Home} /> */}
+      <Stack.Screen name="YouChat" component={TabNavigator} />
     </Stack.Navigator>
   );
 }
@@ -35,6 +34,7 @@ export default function App() {
   return (
     <NavigationContainer>
       <AppNavigator />
+      <StatusBar style="auto" />
     </NavigationContainer>
   );
 }
