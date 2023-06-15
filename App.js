@@ -7,6 +7,7 @@ import "react-native-gesture-handler";
 import Login from "./screens/Login";
 import Status from "./screens/Status";
 import Calls from "./screens/Calls";
+import Chats from "./screens/Chats";
 
 const Stack = createStackNavigator();
 const Tab = createMaterialTopTabNavigator();
@@ -14,7 +15,7 @@ const Tab = createMaterialTopTabNavigator();
 function TabNavigator() {
   return (
     <Tab.Navigator>
-      <Tab.Screen name="Home" component={AppNavigator} />
+      <Tab.Screen name="Chats" component={Chats} />
       <Tab.Screen name="Status" component={Status} />
       <Tab.Screen name="Calls" component={Calls} />
     </Tab.Navigator>
@@ -24,7 +25,7 @@ function TabNavigator() {
 function AppNavigator() {
   return (
     <Stack.Navigator>
-      <Stack.Screen name="LoginScreen" component={Login} />
+      <Stack.Screen name="LoginScreen" component={TabNavigator} />
       {/* <Stack.Screen name="Home" component={Home} /> */}
     </Stack.Navigator>
   );
@@ -33,7 +34,7 @@ function AppNavigator() {
 export default function App() {
   return (
     <NavigationContainer>
-      <TabNavigator />
+      <AppNavigator />
     </NavigationContainer>
   );
 }
