@@ -13,7 +13,7 @@ function TabNavigator() {
   return (
     <Tab.Navigator>
       <Tab.Screen name="Home" component={AppNavigator} />
-      {/* <Tab.Screen name="Settings" component={Settings} /> */}
+      <Tab.Screen name="Login" component={Login} />
     </Tab.Navigator>
   );
 }
