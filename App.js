@@ -5,6 +5,8 @@ import { StatusBar } from "expo-status-bar";
 import { StyleSheet, Text, View } from "react-native";
 import "react-native-gesture-handler";
 import Login from "./screens/Login";
+import Status from "./screens/Status";
+import Calls from "./screens/Calls";
 
 const Stack = createStackNavigator();
 const Tab = createMaterialTopTabNavigator();
@@ -13,7 +15,8 @@ function TabNavigator() {
   return (
     <Tab.Navigator>
       <Tab.Screen name="Home" component={AppNavigator} />
-      <Tab.Screen name="Login" component={Login} />
+      <Tab.Screen name="Status" component={Status} />
+      <Tab.Screen name="Calls" component={Calls} />
     </Tab.Navigator>
   );
 }
