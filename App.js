@@ -1,7 +1,12 @@
 import { NavigationContainer } from "@react-navigation/native";
+import { createStackNavigator } from "@react-navigation/stack";
+import { createMaterialTopTabNavigator } from "@react-navigation/material-top-tabs";
 import { StatusBar } from "expo-status-bar";
 import { StyleSheet, Text, View } from "react-native";
 import "react-native-gesture-handler";
+
+const Stack = createStackNavigator();
+const Tab = createMaterialTopTabNavigator();
 
 export default function App() {
   return (
