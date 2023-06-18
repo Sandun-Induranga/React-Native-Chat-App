@@ -1,19 +1,28 @@
-import { View, Text, Image, StyleSheet } from "react-native";
+import { View, Text, Image, StyleSheet, TouchableOpacity } from "react-native";
 import React from "react";
 import avatar from "../assets/avatar.jpg";
+import { useNavigation } from "@react-navigation/native";
+import ChatContext from "../components/ChatContext";
 
 const User = () => {
+  const navigation = useNavigation();
+
   return (
-    <View style={styles.container}>
-      <View style={{ flexDirection: "row" }}>
-        <Image source={avatar} style={styles.avatar} />
-        <View style={{ marginLeft: 10 }}>
-          <Text style={styles.username}>Username</Text>
-          <Text style={styles.text}>Really, Thats great</Text>
+    <TouchableOpacity
+      style={{ width: "100%", flex: 1 }}
+      onPress={() => navigation.navigate()}
+    >
+      <View style={styles.container}>
+        <View style={{ flexDirection: "row" }}>
+          <Image source={avatar} style={styles.avatar} />
+          <View style={{ marginLeft: 10 }}>
+            <Text style={styles.username}>Username</Text>
+            <Text style={styles.text}>Really, Thats great</Text>
+          </View>
         </View>
+        <Text style={styles.time}>4:25 pm</Text>
       </View>
-      <Text style={styles.time}>4:25 pm</Text>
-    </View>
+    </TouchableOpacity>
   );
 };
 
