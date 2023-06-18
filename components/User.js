@@ -5,8 +5,14 @@ import avatar from "../assets/avatar.jpg";
 const User = () => {
   return (
     <View style={styles.container}>
-      <Image source={avatar} style={styles.avatar} />
-      <Text>Username</Text>
+      <View style={{ flexDirection: "row" }}>
+        <Image source={avatar} style={styles.avatar} />
+        <View style={{ marginLeft: 10 }}>
+          <Text style={styles.username}>Username</Text>
+          <Text style={styles.text}>Really, Thats great</Text>
+        </View>
+      </View>
+      <Text style={styles.time}>4:25 pm</Text>
     </View>
   );
 };
@@ -17,15 +23,32 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     flexDirection: "row",
-    backgroundColor: "",
+    backgroundColor: "#fff",
     alignItems: "center",
     justifyContent: "space-between",
     width: "100%",
     paddingHorizontal: 30,
+    paddingVertical: 10,
+    gap: 20,
   },
   avatar: {
     width: 50,
     height: 50,
     borderRadius: 50,
+    borderColor: "grey",
+    borderWidth: 1,
+  },
+  username: {
+    fontSize: 18,
+    fontWeight: "bold",
+  },
+  text: {
+    fontSize: 16,
+    color: "grey",
+    marginTop: 5,
+  },
+  time: {
+    fontSize: 12,
+    color: "grey",
   },
 });
