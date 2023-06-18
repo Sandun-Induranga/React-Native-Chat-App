@@ -8,7 +8,6 @@ const Stack = createStackNavigator();
 const AppNavigator = () => {
   return (
     <Stack.Navigator>
-      {/* <Stack.Screen name="Login" component={Login} /> */}
       <Stack.Screen name="YouChat" component={TabNavigator} />
     </Stack.Navigator>
   );

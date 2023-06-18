@@ -1,11 +1,18 @@
 import { View, Text } from "react-native";
 import React from "react";
 import { StyleSheet } from "react-native";
+import User from "../components/User";
 
 const Chats = () => {
   return (
     <View style={styles.container}>
-      <Text>Chats</Text>
+      <User />
+      <User />
+      <User />
+      <User />
+      <User />
+      <User />
+      <User />
     </View>
   );
 };
