@@ -7,7 +7,7 @@ import Login from "./screens/Login";
 
 export default function App() {
   return (
-    <NavigationContainer>
+    <NavigationContainer style={styles.container}>
       <AppNavigator />
       {/* <Login /> */}
       <StatusBar style="auto" />
@@ -18,7 +18,7 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "#fff",
+    backgroundColor: "black",
     alignItems: "center",
     justifyContent: "center",
   },
