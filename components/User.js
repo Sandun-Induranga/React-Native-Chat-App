@@ -10,7 +10,7 @@ const User = () => {
   return (
     <TouchableOpacity
       style={{ width: "100%", flex: 1 }}
-      onPress={() => navigation.navigate()}
+      onPress={() => navigation.navigate("ChatContext")}
     >
       <View style={styles.container}>
         <View style={{ flexDirection: "row" }}>
