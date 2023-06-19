@@ -1,10 +1,13 @@
 import { View, Text } from "react-native";
 import React from "react";
+import Slide from "../components/Slide";
 
 const Status = () => {
   return (
     <View>
-      <Text>Status</Text>
+      <Slide />
+      <Slide />
+      <Slide />
     </View>
   );
 };

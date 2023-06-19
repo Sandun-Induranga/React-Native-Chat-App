@@ -8,7 +8,7 @@ const Stack = createStackNavigator();
 
 const AppNavigator = () => {
   return (
-    <Stack.Navigator screenOptions={{ headerShown: false }}>
+    <Stack.Navigator screenOptions={{}}>
       <Stack.Screen name="YouChat" component={TabNavigator} />
       <Stack.Screen name="ChatContext" component={ChatContext} />
     </Stack.Navigator>
