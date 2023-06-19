@@ -22,7 +22,7 @@ export default Chats;
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "#d9d9d9",
+    backgroundColor: "#fff",
     alignItems: "center",
     justifyContent: "start",
   },

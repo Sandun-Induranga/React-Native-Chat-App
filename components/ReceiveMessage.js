@@ -14,10 +14,10 @@ export default ReceivedMessage;
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "#abc4ff",
+    backgroundColor: "#fff",
     alignItems: "center",
     justifyContent: "start",
-    width: "max-content",
+    width: "50%",
     maxwidth: "80%",
     padding: 10,
     borderRadius: 10,
@@ -25,5 +25,6 @@ const styles = StyleSheet.create({
   text: {
     color: "#003566",
     fontSize: 16,
+    width: "100%",
   },
 });
