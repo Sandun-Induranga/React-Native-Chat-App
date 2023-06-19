@@ -1,10 +1,11 @@
 import { View, Text, StyleSheet } from "react-native";
 import React from "react";
+import SendMessage from "./SendMessage";
 
 const ChatContext = () => {
   return (
     <View>
-      <Text>ChatContext</Text>
+      <SendMessage text="This is a message" />
     </View>
   );
 };
