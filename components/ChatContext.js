@@ -9,6 +9,26 @@ const ChatContext = () => {
       <View style={styles.container}>
         <SendMessage text="This is a message sdffsdfdsfdsfdsfsdfddddddddddddddd" />
         <ReceivedMessage text="This is a message" />
+        <ReceivedMessage text="This is a message" />
+        <SendMessage text="This is a message" />
+        <ReceivedMessage text="This is a message" />
+        <SendMessage text="This is a message" />
+        <ReceivedMessage text="This is a message" />
+        <SendMessage text="This is a message" />
+        <ReceivedMessage text="This is a message" />
+        <SendMessage text="This is a message" />
+        <ReceivedMessage text="This is a message" />
+        <SendMessage text="This is a message" />
+        <ReceivedMessage text="This is a message" />
+        <SendMessage text="This is a message" />
+        <ReceivedMessage text="This is a message" />
+        <SendMessage text="This is a message" />
+        <ReceivedMessage text="This is a message" />
+        <SendMessage text="This is a message" />
+        <ReceivedMessage text="This is a message" />
+        <SendMessage text="This is a message" />
+        <ReceivedMessage text="This is a message" />
+        <SendMessage text="This is a message" />
       </View>
     </ScrollView>
   );
@@ -22,5 +42,7 @@ const styles = StyleSheet.create({
     backgroundColor: "#fff",
     alignItems: "center",
     width: "100%",
+    padding: 10,
+    gap: 10,
   },
 });

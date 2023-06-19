@@ -14,7 +14,7 @@ export default ReceivedMessage;
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "#fff",
+    backgroundColor: "#abc4ff",
     alignItems: "center",
     justifyContent: "start",
     width: "50%",
