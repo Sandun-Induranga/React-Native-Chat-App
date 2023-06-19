@@ -17,9 +17,11 @@ const styles = StyleSheet.create({
     backgroundColor: "#003566",
     alignItems: "center",
     justifyContent: "start",
-    width: "max-content",
+    width: "50%",
     padding: 10,
     borderRadius: 10,
+    left: "50%",
+    height: "min-content",
   },
   text: {
     color: "#fff",

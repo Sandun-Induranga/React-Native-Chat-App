@@ -18,11 +18,12 @@ const styles = StyleSheet.create({
     alignItems: "center",
     justifyContent: "start",
     width: "max-content",
+    maxwidth: "80%",
     padding: 10,
     borderRadius: 10,
   },
   text: {
-    color: "gray",
+    color: "#003566",
     fontSize: 16,
   },
 });
