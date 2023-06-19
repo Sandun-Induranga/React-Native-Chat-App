@@ -1,6 +1,5 @@
 import { createStackNavigator } from "@react-navigation/stack";
 import React from "react";
-import Login from "../screens/Login";
 import TabNavigator from "./TabNavigator";
 import ChatContext from "../components/ChatContext";
 
